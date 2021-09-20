@@ -1,19 +1,43 @@
+*{
+    box-sizing:border-box;
+}
 body{
     display:grid;
     place-items:center ;
    
 }
 img{
-    height:90px;
+    height:120px;
 }
 .card{
-    box-shadow: 0 0 20pxrgba(0,0,0,0.2);
-    width:80%;
-    max-width:600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    width:60%;
+    max-width:450px;
     display:flex;
-    flex-direction:column;
-    background:blue;
-    color:white;
-    text-align:center;
+    background:rgb(3, 3, 95);
+    color: whitesmoke;
+    text-align: center;
     padding: 2px;
+    margin-top: 15%;
+
+    transition:5px 5px 5px rgba(0,0,0,0.9);
+    cursor:pointer;
+}
+.card:hover{
+    transform:scale(1.2);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+
+}
+
+.profile{
+    border-radius: 60%;
+    border: 5px solid blue;
+}
+.name{
+    color:rgb(245, 146, 162);
+    text-align: left;
+}
+.card3{
+    text-align: center;
+    color:rgb(245, 146, 162);
 }
